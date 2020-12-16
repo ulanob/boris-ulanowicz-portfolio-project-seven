@@ -1,0 +1,42 @@
+.projects {
+  h2 {
+    color: $black;
+    margin-bottom: 50px;
+  }
+  .project-container {
+    width: 620px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0 10px;
+  }
+
+  .project-column-one,
+  .project-column-two,
+  .project-column-three {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px 0;
+  }
+
+  .project-column-one,
+  .project-column-three {
+    grid-template-rows: 300px 200px;
+  }
+
+  .project-column-two {
+    grid-template-rows: 200px 300px;
+  }
+
+  .project-one,
+  .project-two,
+  .project-three {
+    grid-row: 1;
+  }
+
+  .project-four,
+  .project-five,
+  .project-six {
+    grid-row: 2;
+  }
+}
