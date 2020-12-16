@@ -35,6 +35,7 @@ h1 {
 
 h2 {
   font-size: 3rem;
+  text-align: center;
 }
 
 p {
@@ -43,5 +44,23 @@ p {
 }
 
 img {
+  display: block;
   width: 100%;
+  max-width: 200px;
+}
+
+
+// Style Divs
+.bottom-slant {
+  margin-bottom: 50px;
+  border-style: solid;
+  border-width: 75px 100vw 0 0;
+  border-color: $grey transparent transparent transparent;
+}
+
+.top-slant {
+  margin-top: 50px;
+  border-style: solid;
+  border-width: 75px 100vw 0 0;
+  border-color: transparent #292929 transparent transparent;
 }
