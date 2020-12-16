@@ -291,14 +291,14 @@ img {
 .bottom-slant {
   margin-bottom: 50px;
   border-style: solid;
-  border-width: 75px 100vw 0 0;
+  border-width: 75px 98.5vw 0 0;
   border-color: #292929 transparent transparent transparent;
 }
 
 .top-slant {
   margin-top: 50px;
   border-style: solid;
-  border-width: 75px 100vw 0 0;
+  border-width: 75px 98.5vw 0 0;
   border-color: transparent #292929 transparent transparent;
 }
 
@@ -503,7 +503,7 @@ footer textarea {
 
 footer button {
   width: 10%;
-  margin: 25px auto;
+  margin: 25px auto 0px;
   background-color: #3078A4;
   height: 40px;
   padding: 5px 0;
@@ -517,5 +517,5 @@ footer .social-icons {
 }
 
 footer .social-icons p {
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
