@@ -277,6 +277,7 @@ h2 {
 
 p {
   font-size: 2rem;
+  font-family: 'Open Sans', serif;
 }
 
 img {
@@ -356,8 +357,7 @@ header {
 }
 
 .about .image-container {
-  width: calc(100% / 3);
-  height: 300px;
+  width: calc(100% / 5);
   margin-right: 50px;
 }
 
@@ -366,6 +366,6 @@ header {
 }
 
 .about p {
-  width: calc( 2 * (100% / 3) - 50px);
+  width: calc( 4 * (100% / 5) - 50px);
   color: #111111;
 }
