@@ -1,0 +1,45 @@
+header {
+  min-height: 55vh;
+  background-color: $grey;
+}
+
+.nav-bar {
+  border-bottom: 1px solid $blue;
+  margin-bottom: 100px;
+
+  .nav-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  h2 {
+    margin: 10px auto;
+    font-size: 1.8rem;
+  }
+  nav{
+    width: 52.5%;
+    margin: 10px 0;
+  }
+  ul {
+    display: flex;
+    // justify-content: space-between;
+  }
+  li {
+    margin-right: 50px;
+    list-style: none;
+  }
+}
+
+.header-content {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  h1 {
+    color: $blue;
+  }
+}
+
+.bottom-slant {
+  border-style: solid;
+  border-width: 75px 100vw 0 0;
+  border-color: $grey transparent transparent transparent;
+}
