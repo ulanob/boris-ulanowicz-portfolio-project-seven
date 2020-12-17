@@ -352,6 +352,10 @@ header {
   color: #3078A4;
 }
 
+.header-content img {
+  margin: 0 auto;
+}
+
 .about {
   background-color: #F1F1F1;
 }
@@ -415,14 +419,22 @@ header {
   color: #111111;
 }
 
+.projects img {
+  max-width: none;
+}
+
 .projects .project-container {
-  width: 620px;
+  width: 60%;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 0 10px;
+  grid-gap: 0 20px;
+}
+
+.projects .project-content {
+  height: 100%;
 }
 
 .projects .project-column-one,
@@ -432,18 +444,24 @@ header {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  grid-gap: 10px 0;
+  grid-gap: 20px 0;
 }
 
 .projects .project-column-one,
 .projects .project-column-three {
-  -ms-grid-rows: 300px 200px;
-      grid-template-rows: 300px 200px;
+  -ms-grid-rows: 3fr 2fr;
+      grid-template-rows: 3fr 2fr;
+}
+
+.projects .project-column-one img,
+.projects .project-column-three img {
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .projects .project-column-two {
-  -ms-grid-rows: 200px 300px;
-      grid-template-rows: 200px 300px;
+  -ms-grid-rows: 2fr 3fr;
+      grid-template-rows: 2fr 3fr;
 }
 
 .projects .project-one,
@@ -511,11 +529,27 @@ footer button {
   font-weight: 500;
 }
 
-footer .social-icons {
+footer .socials {
   text-align: center;
   font-size: 2rem;
+  padding-bottom: 50px;
 }
 
-footer .social-icons p {
+footer .socials p {
   margin-bottom: 25px;
+}
+
+footer .socials .social-icons {
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .socials i {
+  font-size: 3rem;
 }
