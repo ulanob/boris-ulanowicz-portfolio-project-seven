@@ -1,4 +1,5 @@
 .projects {
+  
   h2 {
     color: $black;
   }
@@ -6,11 +7,12 @@
     max-width: none;
   }
   .project-container {
-    width: 100%;
+    
+    width: 60%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 0 10px;
+    grid-gap: 0 20px;
   }
 
   .project-content{
@@ -22,7 +24,7 @@
   .project-column-three {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 0 0;
+    grid-gap: 20px 0;
   }
 
   .project-column-one,

@@ -424,13 +424,13 @@ header {
 }
 
 .projects .project-container {
-  width: 100%;
+  width: 60%;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 0 10px;
+  grid-gap: 0 20px;
 }
 
 .projects .project-content {
@@ -444,7 +444,7 @@ header {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  grid-gap: 0 0;
+  grid-gap: 20px 0;
 }
 
 .projects .project-column-one,
@@ -529,12 +529,27 @@ footer button {
   font-weight: 500;
 }
 
-footer .social-icons {
+footer .socials {
   text-align: center;
   font-size: 2rem;
   padding-bottom: 50px;
 }
 
-footer .social-icons p {
+footer .socials p {
   margin-bottom: 25px;
+}
+
+footer .socials .social-icons {
+  width: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .socials i {
+  font-size: 3rem;
 }

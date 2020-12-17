@@ -1,0 +1,608 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/* GLOBAL styles */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+  color: #FCFCFC;
+}
+
+h1, 
+h2,
+h3 {
+  font-family: 'Fredericka the Great', cursive;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p{
+  font: 2rem 'Roboto', sans-serif;
+  line-height: 29px;
+}
+
+a {
+  display: block;
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  border: 2px solid #152D20;
+  margin: 40px auto;
+  background-color: #FCFCFC;
+  font: 2rem 'Cormorant Garamond', serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: #152D20;
+}
+
+a:hover,
+a:focus {
+  background-color: #C3D3CB;
+  /* color:#FCFCFC; */
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+
+
+
+/* HEADER styles */
+header {
+  background-image: url(../animal-land-assets/image-1.jpg);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 30% bottom;
+  padding-top: 10px;
+  position: relative;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+  float: left;
+  /* line-height: 11.7rem; */
+  /* text also seems too dark here */
+}
+
+h1 span {
+  display: block;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+nav {
+  width: 100%;
+  float: left;
+  position: fixed;
+}
+
+nav i{
+  font-size: 5rem;
+}
+
+header label {
+  position: fixed;
+  right: 30px;
+}
+
+/* Kind of a hybrid between Brent's sliding menu from Summer Web Dev but also with Esther's friend Nadia's use of height and overflow:hidden. Didn't want to use display:none because of accessibility so I tried to find different transitions that I could possibly use but couldn't come up with anything satisfactory!  */
+
+ul.sliding-menu {
+  /* decide if fixed or not later */
+  position: fixed;
+  width: 90%;
+  top: 100px;
+  height: 0px;
+  overflow: hidden;
+}
+
+ul.sliding-menu li {
+  margin-bottom: 5px;
+}
+
+ul.sliding-menu a {
+  width: 100%;
+  height: 60px;
+  display: inline-block;
+  padding: 15px 0;
+  margin: 0;
+  font: 2rem 'Cormorant Garamond', serif;
+  color: #FCFCFC;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #000000DD; 
+  border: 2px solid #000000DD;
+}
+
+ul.sliding-menu a:hover,
+ul.sliding-menu a:focus {
+  background-color: #152D20dd;
+  border: 2px solid #152D20;
+}
+
+#toggle:checked + ul.sliding-menu {
+  height: 100%;
+  left: auto;
+  top: 100px;
+  transition: all 0.75s;
+}
+
+#toggle {
+  display: none;
+}
+
+/* I like the position fixed for the hamburger icon, but when you click on a link that takes you further down the page, the menu does not close and it stays on screen after the move.  */
+
+.social-media-icons {
+  height: 40px;
+  position: absolute;
+  margin: 0 auto 0 0;
+  top: -250px;
+  right: 60px;
+}
+
+.social-media-icons a{
+  display: block;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: none;
+  background-color: inherit;
+  color: #FCFCFC;
+}
+
+
+
+
+/* ABOUT-1 styles */
+.about-1{
+  background-color: #152D20;
+  padding-bottom: 20px;
+}
+
+.litter-box {
+  padding: 60px 0;
+}
+
+.about-1 h2,
+.about-1 p  {
+  margin-bottom: 20px;
+}
+
+.about a {
+  background-color: #FCFCFC;
+  color: #152D20;
+}
+
+/* ABOUT-2 styles */
+
+.about-2 {
+  background-color: #C3D3CB;
+}
+
+.about-2 h2 {
+  padding-top: 30px;
+  color: #152D20;
+  text-align: center;
+}
+
+.lizard,
+.sheep,
+.parrot {
+  width: calc((50%) - 5px);
+  margin: 50px 0;
+  float: left;
+}
+
+.lizard {
+  margin-right: 10px;
+}
+
+.parrot {
+  display: none;
+}
+
+
+.about-3{
+  background-color: #152D20;
+  padding: 60px 0;
+}
+
+.about-3 a {
+  background-color: #152D20;
+  height: auto;
+  margin: 0 auto;
+  font-size: 3rem;
+  color: #FCFCFC;
+}
+
+.about-3 i {
+  font-size: 10rem;
+  display: block;
+  color: #FCFCFC;
+}
+
+.about-3 span {
+  display: block;
+  padding: 20px 0 40px 0;
+}
+
+
+
+/* BLOG styles */
+.blog {
+  color: #152D20;
+  text-align: center;
+}
+
+.blog h2 {
+  padding-top: 40px;
+}
+
+.blog p {
+  padding-top: 20px;
+}
+
+.blog a {
+  background-color: #152D20;
+  color: #FCFCFC;
+}
+
+.blog a:hover,
+.blog a:focus {
+  background-color: #FCFCFC;
+  color: #152D20;
+}
+
+/* CONTACT styles */
+
+.contact {
+  background-color: #152D20;
+  padding-bottom: 60px;
+}
+
+.contact a {
+  background-color: #152D20;
+  color: #FCFCFC;
+  width: calc(25%);
+  float: left;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+h4 {
+  font: 3rem 'Cormorant Garamond', serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.contact p {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.subscribe input,
+.subscribe button {
+  display: block;
+  width:100%;
+  height: 40px;
+}
+
+.subscribe input {
+  margin: 10px 0;
+  font: 2rem 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.subscribe button {
+  background-color: #000000;
+  font: 2rem 'Cormorant Garamond', serif;
+  text-transform: uppercase;
+  color: #FCFCFC;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.address p {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+/* FOOTER styles */
+footer {
+  background-color: #000000;
+  padding: 20px 0;
+}
+
+footer p {
+  color: #FCFCFC;
+  text-align: center;
+}
+
+footer a,
+footer a:hover,
+footer a:focus {
+  display: inline;
+  width: auto;
+  height: auto;
+  background-color: inherit;
+  color: inherit;
+  padding: inherit;
+  border: none;
+  margin: 0;
+  text-transform: none;
+  font: inherit;
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 540px) {
+  .litter-box{
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 780px) {
+  .lizard,
+  .sheep,
+  .parrot {
+    width: calc((100% - 20px) / 3);
+  }
+
+  .lizard,
+  .sheep  {
+    margin-right: 10px;
+  }
+
+  .parrot {
+    display: block;
+  }
+  
+  .icon-box {
+    width: 33%;
+    float: left;
+  }
+}
+
+@media (min-width: 800px) {
+  .litter-box,
+  .suzie-text-container {
+    padding: 60px 0 0 0;
+  }
+  .litter-box {
+    width: 30%;
+    float: left;
+  }
+
+  .suzie-text-container {
+    width: 65%;
+    float: right;
+  }
+  .suzie-text-container a {
+    margin-left: 0;
+  }
+
+  .blog-image-container,
+  .blog-text-container{
+    width: 50%;
+    float: left;
+  }
+
+  .blog-text-container {
+    text-align: left;
+    padding: 40px;
+  }
+  .blog-text-container h2, 
+  .blog-text-container h3,
+  .blog-text-container p {
+    margin: 0;
+  }
+  .blog-text-container h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .blog-text-container p {
+    font-size: 1rem;
+    padding: 20px 0 0 0;
+    line-height: 1.2rem;
+  }
+  .blog-text-container a {
+    width: 100px;
+    height: 30px;
+    padding: 7px 3px;
+    margin: 20px 0 0 0;
+    font-size: 1rem;
+  }
+
+  .blog-swap {
+    clear: right;
+    float: right;
+  }
+
+  .about-2 span {
+    display: block;
+  }
+
+  .subscribe input,
+  .subscribe button {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 950px) {
+  .blog-text-container {
+    padding-top: 0;
+  }
+
+  .blog h2 {
+    padding-top: 10%;
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .blog p {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+  .blog a {
+    font-size: 1.8rem;
+    width: 200px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 1100px) {
+  h1 {
+    width: 50%;
+    float: right;
+    font-size: 9rem;
+    text-align: right;
+    padding: 100px 50px 0 0;
+  }
+
+  .fa-bars {
+    position: fixed;
+    /* top: -100; */
+    height: 0;
+    overflow: hidden;
+  }
+  nav {
+    width: 50%;
+    position: static;
+    float: left;
+  }
+  ul.sliding-menu {
+    position: static;
+    width: 100%;
+    top: 0;
+    height: auto;
+  }
+
+  ul.sliding-menu li {
+    margin: 0;
+  }
+
+  ul.sliding-menu a{
+    float: left;
+    width: 100px;
+    border: none;
+    margin: 0;
+    font: 2rem 'Cormorant Garamond', serif;
+    background-color: inherit;
+  }
+
+  ul.sliding-menu a:hover,
+  ul.sliding-menu a:focus {
+    background-color: inherit;
+    border: none;
+  }
+
+  .blog-text-container {
+    padding: 6% 6% 0 6%;
+  }
+
+
+  .contact {
+    padding: 50px 0;
+  }
+
+  .contact h4 {
+    font-size: 2.2rem;
+  }
+  .newsletter p {
+    margin-bottom: 5px;
+  }
+
+  .subscribe {
+    width: 100%;
+  }
+  .subscribe input,
+  .subscribe button {
+    float: left;
+  }
+
+  .subscribe input {
+    width: 75%;
+    text-align: start;
+  }
+
+  .subscribe input:placeholder-shown {
+    padding-left: 30px;
+  }
+
+  .subscribe button {
+    width: 25%;
+  }
+
+  .contact-info  {
+    width: 100%;
+  }
+
+  .contact-links,
+  .address {
+    width: 25%;
+    float: left;
+  }
+
+  .contact-links:first-child {
+    padding: 10px 0 0 0;
+  }
+
+  .contact-links a{
+    float: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+
+  .newsletter{
+    float: left;
+    width: 50%;
+  }
+  
+  .contact-links a {
+    height: auto;
+  }
+
+  .address h4,
+  .address p {
+      text-align: right;
+  }
+  
+  .social-media-icons {
+    top: auto;
+    bottom: 250px;
+  }
+}
