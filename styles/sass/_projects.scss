@@ -2,12 +2,19 @@
   h2 {
     color: $black;
   }
+  img{
+    max-width: none;
+  }
   .project-container {
-    width: 620px;
+    width: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 0 10px;
+  }
+
+  .project-content{
+    height: 100%;
   }
 
   .project-column-one,
@@ -15,16 +22,20 @@
   .project-column-three {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 10px 0;
+    grid-gap: 0 0;
   }
 
   .project-column-one,
   .project-column-three {
-    grid-template-rows: 300px 200px;
+    grid-template-rows: 3fr 2fr;
+    img {
+      // height: 100%;
+      object-fit: fill;
+    }
   }
 
   .project-column-two {
-    grid-template-rows: 200px 300px;
+    grid-template-rows: 2fr 3fr;
   }
 
   .project-one,
