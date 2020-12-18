@@ -28,7 +28,7 @@ footer {
     resize: none;
   }
   button {
-    width: 10%;
+    width: 100px;
     margin: 25px auto 0px;
     background-color: $blue;
     height: 40px;
@@ -46,12 +46,17 @@ footer {
   }
   .social-icons{
     width: 10%;
+    min-width: 100px;
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
   }
   i {
     font-size: 3rem;
+  }
+  i:hover,
+  i:focus{
+    color: $blue;
   }
 }
 }

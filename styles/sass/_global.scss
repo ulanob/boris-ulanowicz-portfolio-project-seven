@@ -52,16 +52,17 @@ img {
 
 
 // Style Divs
-.bottom-slant {
-  margin-bottom: 50px;
+.bottom-slant,
+.top-slant{
   border-style: solid;
   border-width: 75px 98.5vw 0 0;
+}
+.bottom-slant {
+  margin-bottom: 50px;
   border-color: $grey transparent transparent transparent;
 }
 
 .top-slant {
   margin-top: 50px;
-  border-style: solid;
-  border-width: 75px 98.5vw 0 0;
   border-color: transparent $grey transparent transparent;
 }

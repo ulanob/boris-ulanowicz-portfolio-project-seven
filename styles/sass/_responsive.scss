@@ -1,0 +1,38 @@
+@media (max-width: 1250px) {
+  nav{
+    width: 70%;
+  }
+  .nav-bar li {
+    padding: 10px 20px;
+  }
+
+  .bottom-slant,
+  .top-slant{
+    border-width: 75px 98vw 0 0;
+  }
+}
+
+@media (max-width: 870px) {
+  // hamburger menu
+  .bottom-slant,
+  .top-slant{
+    border-width: 40px 97vw 0 0;
+  }
+}
+
+@media (max-width: 580px) {
+  .skill-icon-containers {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  form, input{
+    display: block;
+  }
+  .icon-10 {
+    grid-column-start: 2;
+  }
+
+  .bottom-slant,
+  .top-slant{
+    border-width: 40px 96vw 0 0;
+  }
+}
