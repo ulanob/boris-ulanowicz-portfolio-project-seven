@@ -321,24 +321,30 @@ header {
           justify-content: space-between;
 }
 
+.nav-bar a {
+  margin: 0 auto;
+}
+
 .nav-bar h2 {
-  margin: 10px auto;
+  padding: 10px 0;
+  margin: 0;
   font-size: 1.8rem;
 }
 
 .nav-bar nav {
   width: 52.5%;
-  margin: 10px 0;
+  margin: 0;
 }
 
 .nav-bar ul {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .nav-bar li {
-  margin-right: 75px;
+  padding: 10px 37.5px;
   list-style: none;
 }
 
@@ -354,6 +360,11 @@ header {
 
 .header-content img {
   margin: 0 auto;
+}
+
+.hover-header-links:hover,
+.hover-header-links:focus {
+  background: radial-gradient(circle, #3078a4 0%, #292929 150%);
 }
 
 .about {
@@ -401,6 +412,8 @@ header {
 
 .icon {
   width: 100px;
+  padding: 20px 0 10px 0;
+  border-radius: 10px;
   margin: 0 auto;
 }
 
@@ -415,12 +428,52 @@ header {
   margin: 0 auto;
 }
 
+.icon-1:hover,
+.icon-1:focus,
+.icon-6:hover,
+.icon-6:focus {
+  background-color: rgba(255, 0, 0, 0.6);
+}
+
+.icon-2:hover,
+.icon-2:focus,
+.icon-7:hover,
+.icon-7:focus {
+  background-color: rgba(255, 166, 0, 0.6);
+}
+
+.icon-3:hover,
+.icon-3:focus,
+.icon-8:hover,
+.icon-8:focus {
+  background-color: rgba(255, 251, 0, 0.6);
+}
+
+.icon-4:hover,
+.icon-4:focus,
+.icon-9:hover,
+.icon-9:focus {
+  background-color: rgba(0, 128, 0, 0.6);
+}
+
+.icon-5:hover,
+.icon-5:focus,
+.icon-10:hover,
+.icon-10:focus {
+  background-color: rgba(0, 0, 255, 0.6);
+}
+
 .projects h2 {
   color: #111111;
 }
 
 .projects img {
   max-width: none;
+  border-radius: 10px;
+}
+
+.projects .hover-project-gif {
+  display: none;
 }
 
 .projects .project-container {
@@ -476,6 +529,16 @@ header {
 .projects .project-six {
   -ms-grid-row: 2;
   grid-row: 2;
+}
+
+.projects a:hover .hover-project-jpg,
+.projects a:focus .hover-project-jpg {
+  display: none;
+}
+
+.projects a:hover .hover-project-gif,
+.projects a:focus .hover-project-gif {
+  display: block;
 }
 
 footer {

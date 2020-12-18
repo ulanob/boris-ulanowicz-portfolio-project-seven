@@ -12,6 +12,8 @@
 
 .icon {
   width: 100px;
+  padding: 20px 0 10px 0;
+  border-radius: 10px;
   margin: 0 auto;
   i {
     width: 100px;
@@ -23,4 +25,39 @@
     width: 50px;
     margin: 0 auto;
   }
+}
+
+.icon-1:hover,
+.icon-1:focus,
+.icon-6:hover,
+.icon-6:focus {
+  background-color: rgba(255, 0, 0, 0.6);
+}
+
+.icon-2:hover,
+.icon-2:focus,
+.icon-7:hover,
+.icon-7:focus {
+  background-color: rgba(255, 166, 0, 0.6);
+}
+
+.icon-3:hover,
+.icon-3:focus,
+.icon-8:hover,
+.icon-8:focus {
+  background-color: rgba(255, 251, 0, 0.6);
+}
+
+.icon-4:hover,
+.icon-4:focus,
+.icon-9:hover,
+.icon-9:focus {
+  background-color: rgba(0, 128, 0, 0.6);
+}
+
+.icon-5:hover,
+.icon-5:focus,
+.icon-10:hover,
+.icon-10:focus {
+  background-color: rgba(0, 0, 255, 0.6);
 }
