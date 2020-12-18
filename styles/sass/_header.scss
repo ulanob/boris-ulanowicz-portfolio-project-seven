@@ -10,21 +10,29 @@ header {
   .nav-flex {
     display: flex;
     justify-content: space-between;
+
+  }
+  a{
+    margin: 0 auto;
+    // display: block;
+    // width: 100%;
+    // height: 100%;
   }
   h2 {
-    margin: 10px auto;
+    padding: 10px 0;
+    margin: 0;
     font-size: 1.8rem;
   }
   nav{
     width: 52.5%;
-    margin: 10px 0;
+    margin: 0;
   }
   ul {
+    height: 100%;
     display: flex;
-    // justify-content: space-between;
   }
   li {
-    margin-right: 75px;
+    padding: 10px 37.5px;
     list-style: none;
   }
 }
@@ -39,4 +47,9 @@ header {
   img {
     margin: 0 auto;
   }
+}
+
+.hover-header-links:hover,
+.hover-header-links:focus {
+  background: radial-gradient(circle, rgba(48,120,164,1) 0%, rgba(41,41,41,1) 150%);
 }

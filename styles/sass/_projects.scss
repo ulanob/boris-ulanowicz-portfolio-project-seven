@@ -1,13 +1,17 @@
 .projects {
-  
   h2 {
     color: $black;
   }
   img{
     max-width: none;
+    border-radius: 10px;
   }
+  .hover-project-gif{
+    display: none;
+  }
+
+
   .project-container {
-    
     width: 60%;
     margin: 0 auto;
     display: grid;
@@ -50,5 +54,15 @@
   .project-five,
   .project-six {
     grid-row: 2;
+  }
+
+  a:hover,
+  a:focus {
+    .hover-project-jpg{
+      display: none;
+    }
+    .hover-project-gif{
+      display: block;
+    }
   }
 }

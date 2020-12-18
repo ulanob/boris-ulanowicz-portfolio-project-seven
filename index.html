@@ -15,14 +15,16 @@
     <div class="nav-bar">
       <div class="wrapper">
         <div class="nav-flex">
-          <h2>borisweb.dev</h2>
+          <a href="https://borisweb.dev">
+            <h2>borisweb.dev</h2>
+          </a>
           <nav>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li class="hover-header-links"><a href="#">Home</a></li>
+              <li class="hover-header-links"><a href="#about">About</a></li>
+              <li class="hover-header-links"><a href="#skills">Skills</a></li>
+              <li class="hover-header-links"><a href="#projects">Projects</a></li>
+              <li class="hover-header-links"><a href="#contact">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -31,29 +33,27 @@
     <div class="header-content wrapper">
       <p>Hi! My name is</p>
       <img src="./assets/boris-signature.png" alt="my signature">
-      <!-- <h1>front-end web developer</h1> -->
       <p>A Front-End Web Dev, at your service!</p>
     </div>
-    <!-- <img src="https://placebear.com/300/300" alt="oh hi it me"> -->
   </header>
   <div class="bottom-slant"></div>
 
   <main>
     <section class="about" id="about">
       <div class="wrapper">
-        <h2>Me, in a nutshell</h2>
+        <h2>Boris, in a nutshell</h2>
         <div class="about-boris">
           <div class="image-container">
-            <img src="https://placebear.com/400/400" alt="oh hey it me again">
+            <img src="./assets/boris-headshot.jpg" alt="It's me! Well, a slightly younger me.">
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid facere, quasi ab dignissimos similique
-            perspiciatis distinctio consequuntur, laudantium modi vitae et dolore consectetur nisi fugiat? Sunt
-            voluptatibus accusantium vero ratione assumenda magni dignissimos doloremque maxime hic? Eos recusandae
-            distinctio illo dolorem dolore facere quis itaque nemo necessitatibus repellat doloremque accusantium a
-            cumque similique, doloribus, veniam sapiente, aperiam possimus molestiae laudantium quas repudiandae.
-            Perspiciatis illum fugit quo ipsum in facere sed maiores suscipit aliquam magni dicta totam culpa
-            exercitationem, deserunt id nemo eos fugiat quas ab necessitatibus omnis. Alias eum a vitae nihil hic
-            sapiente, cupiditate, ad, ipsa dolorum provident vero.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic optio culpa quam deserunt facere voluptates
+            sit, adipisci neque laudantium reiciendis, sed nihil error consequatur. Quos perferendis illum, incidunt id
+            quasi sunt obcaecati! Nulla laudantium incidunt cum odit harum voluptatibus exercitationem est, iste sed qui
+            cumque assumenda ullam aperiam minima fugiat magnam facilis distinctio minus temporibus! Deleniti,
+            aspernatur provident, ullam fugit eveniet corporis aut sunt, voluptatibus ab totam exercitationem id
+            perspiciatis commodi quo. Fugit fugiat, possimus itaque repellendus eaque ad rerum perferendis similique
+            repellat aperiam libero nesciunt dignissimos totam nam. Necessitatibus ut impedit veritatis tempora, iusto
+            inventore! Sunt aliquam atque a?</p>
         </div>
       </div>
     </section>
@@ -61,37 +61,37 @@
     <div class="top-slant"></div>
     <section class="skills" id="skills">
       <div class="wrapper">
-        <h2>... to pay the Bills</h2>
+        <h2>... to pay the bills</h2>
         <div class="skill-icon-containers">
-          <div class="icon">
+          <div class="icon icon-1 hover-background">
             <i class="fab fa-html5"></i>
             <p>HTML5</p>
           </div>
-          <div class="icon">
+          <div class="icon icon-2 hover-background">
             <i class="fab fa-css3-alt"></i>
             <p>CSS3</p>
           </div>
-          <div class="icon">
+          <div class="icon icon-3 hover-background">
             <i class="fab fa-sass"></i>
             <p>Sass/SCSS</p>
           </div>
-          <div class="icon">
+          <div class="icon icon-4 hover-background">
             <i class="fab fa-js-square"></i>
             <p>Javascript</p>
           </div>
-          <div class="icon">
+          <div class="icon icon-5 hover-background">
             <img src="./assets/jQuery-icon.png" alt="jQuery logo">
             <p>jQuery</p>
           </div>
-          <div class="icon">
+          <div class="icon icon-6 hover-background">
             <i class="fab fa-react"></i>
             <p>React</p>
           </div>
-          <div class="icon">
+          <div class="icon icon-7 hover-background">
             <i class="fas fa-mobile-alt"></i>
             <p>Responsive Design</p>
           </div>
-          <div class="icon">
+          <div class="icon icon-8 hover-background">
             <i class="fab fa-git-alt"></i>
             <p>Git/Version Control</p>
           </div>
@@ -99,11 +99,11 @@
             <i class="fab fa-github"></i>
             <p>GitHub</p>
           </div> -->
-          <div class="icon">
+          <div class="icon icon-9 hover-background">
             <img src="./assets/api-icon.png" alt="api icon">
             <p>Rest APIs</p>
           </div>
-          <div class="icon">
+          <div class="icon icon-10 hover-background">
             <img src="./assets/firebase-logo.png" alt="firebase logo">
             <p>Firebase</p>
           </div>
@@ -121,8 +121,10 @@
             <div class="project project-one">
               <h3 class="sr-only">Animal Refuge</h3>
               <div class="project-content">
-                <a href="./animal-refuge/index.html" target="new">
-                  <img src="./assets/animal-refuge.gif" alt="a gif of my project animal refuge">
+                <a class="project-one-link" href="./animal-refuge/index.html" target="new">
+                  <img class="hover-project-jpg" src="./assets/animal-refuge.jpg" alt="my project: animal refuge">
+                  <img class="hover-project-gif" src="./assets/animal-refuge.gif"
+                    alt="a gif of my project: animal refuge">
                 </a>
                 <p class="sr-only">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos similique accusamus,
                   accusantium voluptates nobis ipsa! Hic sequi, veniam ab sunt porro repellat tempora qui asperiores
@@ -134,8 +136,12 @@
             <div class="project project-four">
               <h3 class="sr-only">The Juno Art Meme Gallery</h3>
               <div class="project-content">
-                <a href="https://aleksandra-petryga-boris-ulanowicz.github.io/Aleksandra-Petryga-Boris-Ulanowicz-Project-Four/" target="new">
-                  <img src="./assets/juno-meme-gallery.gif" alt="gif of the juno meme gallery, a collaborative project">
+                <a href="https://aleksandra-petryga-boris-ulanowicz.github.io/Aleksandra-Petryga-Boris-Ulanowicz-Project-Four/"
+                  target="new">
+                  <img class="hover-project-jpg" src="./assets/juno-meme-gallery.jpg"
+                    alt="the juno meme gallery, a collaborative project with Aleksandra Petryga">
+                  <img class="hover-project-gif" src="./assets/juno-meme-gallery.gif"
+                    alt="a gif of the juno meme gallery, a collaborative project with Aleksandra Petryga">
                 </a>
                 <p class="sr-only">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos similique accusamus,
                   accusantium voluptates nobis
@@ -154,12 +160,11 @@
             <div class="project project-two">
               <h3 class="sr-only">The Restaurant Mall</h3>
               <div class="project-content">
-
-                <!-- <iframe src="./the-restaurant-mall/index.html">
-                  
-                </iframe> -->
                 <a href="./the-restaurant-mall/index.html" target="new">
-                  <img src="./assets/restaurant-mall.gif" alt="gif of the restaurant mall, a psd conversion project">
+                  <img class="hover-project-jpg" src="./assets/restaurant-mall.jpg"
+                    alt="the restaurant mall, a psd conversion project">
+                  <img class="hover-project-gif" src="./assets/restaurant-mall.gif"
+                    alt="a gif of the restaurant mall, a psd conversion project">
                 </a>
                 <p class="sr-only">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos similique accusamus,
                   accusantium voluptates nobis
@@ -176,7 +181,10 @@
               <h3 class="sr-only">Endangerment</h3>
               <div class="project-content">
                 <a href="https://ulanob.github.io/boris-ulanowicz-project-five/" target="new">
-                  <img src="./assets/endangerment.gif" alt="a gif of a user interacting with my endangerment game app">
+                  <img class="hover-project-jpg" src="./assets/endangerment.jpg"
+                    alt="Endangerment: my take on the legendary game Jeopardy">
+                  <img class="hover-project-gif" src="./assets/endangerment.gif"
+                    alt="a gif of Endangerment: my take on the legendary game Jeopardy">
                 </a>
                 <p class="sr-only">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos similique accusamus,
                   accusantium voluptates nobis
@@ -196,37 +204,43 @@
               <h3 class="sr-only">Choose Your Own Adventure</h3>
               <div class="project-content">
                 <a href="https://ulanob.github.io/boris-ulanowicz-project-three/" target="new">
-                  <img src="./assets/choose-your-own-adventure.gif" alt="a gif of a user navigating through my choose-your-own-adventure web experience">
+                  <img class="hover-project-jpg" src="./assets/choose-your-own-adventure.jpg"
+                    alt="choose-your-own-adventure: a web experience">
+                  <img class="hover-project-gif" src="./assets/choose-your-own-adventure.gif"
+                    alt="a gif of choose-your-own-adventure: a web experience">
                 </a>
                 <p class="sr-only">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos similique accusamus,
                   accusantium voluptates nobis
                   ipsa! Hic sequi, veniam ab sunt porro repellat tempora qui asperiores delectus, deleniti nulla aut
                   nostrum
                   voluptate
-                  expedita. Accusantium voluptatibus maiores dolore magni nostrum laudantium ipsam nihil natus perferendis
+                  expedita. Accusantium voluptatibus maiores dolore magni nostrum laudantium ipsam nihil natus
+                  perferendis
                   voluptates.
                   Aliquam fugiat rerum doloribus explicabo nihil.</p>
               </div>
-  
+
             </div>
             <div class="project project-six">
               <h3 class="sr-only">Hue are you?</h3>
               <div class="project-content">
                 <a href="https://hue-are-you.github.io/hue-are-you/" target="new">
-                  <img src="./assets/hue-are-you.gif" alt="gif of hue are you? a collaborative project">
+                  <img class="hover-project-jpg" src="./assets/hue-are-you.jpg"
+                    alt="'hue are you?' a collaborative project with Calvin Barrett and Christine Shiels">
+                  <img class="hover-project-gif" src="./assets/hue-are-you.gif" alt="a gif of 'hue are you?'a collaborative project with Calvin Barrett and Christine Shiels">
                 </a>
                 <p class="sr-only">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos similique accusamus,
                   accusantium voluptates nobis
                   ipsa! Hic sequi, veniam ab sunt porro repellat tempora qui asperiores delectus, deleniti nulla aut
                   nostrum
                   voluptate
-                  expedita. Accusantium voluptatibus maiores dolore magni nostrum laudantium ipsam nihil natus perferendis
+                  expedita. Accusantium voluptatibus maiores dolore magni nostrum laudantium ipsam nihil natus
+                  perferendis
                   voluptates.
                   Aliquam fugiat rerum doloribus explicabo nihil.</p>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
@@ -250,7 +264,7 @@
       </form>
       <div class="socials">
         <!-- <p>ulanowicz_b@hotmail.com</p> -->
-        <p>.. or check out my socials!</p>
+        <p>.. or swing by my socials!</p>
         <div class="social-icons">
           <a href="https://www.linkedin.com/in/boris-ulanowicz-585981201">
             <i class="fab fa-linkedin"></i>
@@ -266,6 +280,8 @@
     </div>
   </footer>
 
+  <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+  <!-- <script src="./scripts.js"></script> -->
 </body>
 
 </html>
