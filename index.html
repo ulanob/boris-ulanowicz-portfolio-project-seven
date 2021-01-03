@@ -12,31 +12,33 @@
 
 <body>
   <header>
-    <div class="nav-bar">
-      <div class="wrapper">
-        <div class="nav-flex">
-          <a href="https://borisweb.dev">
-            <h2>borisweb.dev</h2>
-          </a>
-          <nav>
-            <ul>
-              <li class="hover-header-links"><a href="#">Home</a></li>
-              <li class="hover-header-links"><a href="#about">About</a></li>
-              <li class="hover-header-links"><a href="#skills">Skills</a></li>
-              <li class="hover-header-links"><a href="#projects">Projects</a></li>
-              <li class="hover-header-links"><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
+    <div class="header-container">
+      <div class="nav-bar">
+        <div class="wrapper">
+          <div class="nav-flex">
+            <a href="https://borisweb.dev">
+              <h2>borisweb.dev</h2>
+            </a>
+            <nav>
+              <ul>
+                <li class="hover-header-links"><a href="#">Home</a></li>
+                <li class="hover-header-links"><a href="#about">About</a></li>
+                <li class="hover-header-links"><a href="#skills">Skills</a></li>
+                <li class="hover-header-links"><a href="#projects">Projects</a></li>
+                <li class="hover-header-links"><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
+      <div class="header-content wrapper">
+        <p>Hi! My name is</p>
+        <img src="./assets/boris-signature.png" alt="my signature">
+        <p>Maker of websites and web apps</p>
+      </div>
     </div>
-    <div class="header-content wrapper">
-      <p>Hi! My name is</p>
-      <img src="./assets/boris-signature.png" alt="my signature">
-      <p>A Front-End Web Dev, at your service!</p>
-    </div>
+    <div class="bottom-slant"></div>
   </header>
-  <div class="bottom-slant"></div>
 
   <main>
     <section class="about" id="about">
@@ -44,24 +46,17 @@
         <h2>Boris, in a nutshell</h2>
         <div class="about-boris">
           <div class="image-container">
-            <img src="./assets/boris-headshot.jpg" alt="It's me! Well, a slightly younger me.">
+            <img src="./assets/boris-headshot.jpg" alt="It's me! Well, a slightly younger me. Photo by Aidrien Wilkins">
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic optio culpa quam deserunt facere voluptates
-            sit, adipisci neque laudantium reiciendis, sed nihil error consequatur. Quos perferendis illum, incidunt id
-            quasi sunt obcaecati! Nulla laudantium incidunt cum odit harum voluptatibus exercitationem est, iste sed qui
-            cumque assumenda ullam aperiam minima fugiat magnam facilis distinctio minus temporibus! Deleniti,
-            aspernatur provident, ullam fugit eveniet corporis aut sunt, voluptatibus ab totam exercitationem id
-            perspiciatis commodi quo. Fugit fugiat, possimus itaque repellendus eaque ad rerum perferendis similique
-            repellat aperiam libero nesciunt dignissimos totam nam. Necessitatibus ut impedit veritatis tempora, iusto
-            inventore! Sunt aliquam atque a?</p>
+          <p>Hello and welcome to my portfolio! I'm Boris, and I am a freshly-minted grad of the Juno College Web Development Immersive Bootcamp. I love creating responsive websites and dynamic web applications for clients looking to build their online presence, as well as discovering different tools and languages in the vast world of coding and web developemnt. When away from the computer, I enjoy quiet walks, bike rides with friends, and trying to pull the perfect shot of espresso from my Rancilio Silvia. Check out my work below!</p>
         </div>
       </div>
     </section>
-
-    <div class="top-slant"></div>
+    
     <section class="skills" id="skills">
+      <div class="top-slant"></div>
       <div class="wrapper">
-        <h2>... to pay the bills</h2>
+        <h2>Toolbox</h2>
         <div class="skill-icon-containers">
           <div class="icon icon-1 hover-background">
             <i class="fab fa-html5"></i>
@@ -109,8 +104,8 @@
           </div>
         </div>
       </div>
+      <div class="bottom-slant"></div>
     </section>
-    <div class="bottom-slant"></div>
 
     <section class="projects" id="projects">
       <div class="wrapper">
@@ -246,10 +241,10 @@
     </section>
   </main>
 
-  <div class="top-slant"></div>
   <footer id="contact">
+    <div class="top-slant"></div>
     <div class="wrapper">
-      <h2>Wanna chat?</h2>
+      <h2>Get in Touch!</h2>
       <form action="https://formspree.io/f/mwkwrjjk" method="POST">
         <label for="name" class="sr-only">name</label>
         <input type="text" name="name" placeholder="Name" id="name" required>
@@ -277,6 +272,9 @@
           </a>
         </div>
       </div>
+    </div>
+    <div class="closing">
+      <p>Made by Boris at <a href="https://junocollege.com">Juno College</a></p>
     </div>
   </footer>
 

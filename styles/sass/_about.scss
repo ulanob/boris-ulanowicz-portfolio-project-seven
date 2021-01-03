@@ -1,8 +1,8 @@
 .about {
-  background-color: $white;
-  h2 {
-    color: $black;
-  }
+  // background-color: $grey;
+  // h2 {
+  //   color: $white;
+  // }
   .about-boris {
     display: flex;
   }
@@ -16,6 +16,6 @@
 
   p {
     width: calc( 4 * (100% / 5) - 50px);
-    color: $black;
+    // color: $black;
   }
 }

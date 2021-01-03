@@ -1,13 +1,19 @@
 .skills {
-  background-color: $grey;
+  background-image: url(../assets/keyboard-code-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
   text-align: center;
-  padding: 50px 0;
+  h2 {
+    padding-top: 50px;
+  }
 }
 
 .skill-icon-containers {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  padding: 0 0 50px 0;
 }
 
 .icon {

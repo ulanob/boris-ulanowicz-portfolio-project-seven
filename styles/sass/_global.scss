@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-color: $white;
+  background-color: $black;
 }
 
 *{
@@ -17,6 +17,10 @@ body {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+section {
+  padding: 50px 0;
 }
 
 li {
@@ -36,6 +40,7 @@ h1 {
 h2 {
   font-size: 3rem;
   text-align: center;
+  // padding-top: 50px;
   margin-bottom: 50px;
 }
 
@@ -58,11 +63,11 @@ img {
   border-width: 75px 98.5vw 0 0;
 }
 .bottom-slant {
-  margin-bottom: 50px;
-  border-color: $grey transparent transparent transparent;
+  // margin-bottom: 50px;
+  border-color: transparent $black transparent transparent;
 }
 
 .top-slant {
-  margin-top: 50px;
-  border-color: transparent $grey transparent transparent;
+  // padding-top: 50px;
+  border-color: $black transparent transparent transparent;
 }

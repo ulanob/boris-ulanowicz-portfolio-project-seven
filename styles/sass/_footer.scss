@@ -1,6 +1,11 @@
 footer {
-  background-color: $grey;
-  padding-top: 50px;
+  // background-image: url(../assets/coffee.jpg), linear-gradient(90deg, rgba(41,41,41,0) 0%, rgba(41,41,41,1) 50%);
+  background-image: url(../assets/coffee.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  h2 {
+    padding-top: 50px;
+  }
   form{
     display: flex;
     flex-wrap: wrap;
@@ -58,5 +63,14 @@ footer {
   i:focus{
     color: $blue;
   }
+  }
+  .closing{
+  background-color: $black;
+  text-align: center;
+  min-height: 50px;
+  p{
+    padding: 10px 0;
+  }
+  }
 }
-}
+
