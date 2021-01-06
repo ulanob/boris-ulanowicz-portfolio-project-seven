@@ -665,6 +665,13 @@ footer .closing p {
   .nav-flex nav {
     display: none;
   }
+  .skills {
+    background-position: center;
+  }
+  footer input {
+    display: block;
+    width: 96%;
+  }
   .bottom-slant,
   .top-slant {
     border-width: 40px 97vw 0 0;
