@@ -390,6 +390,7 @@ header {
 
 .about img {
   border-radius: 50% 50%;
+  border: 2px solid #3078A4;
 }
 
 .about p {
@@ -638,6 +639,7 @@ footer .socials i:focus {
 
 footer .closing {
   background-color: #111111;
+  border-top: 1px solid #3078A4;
   text-align: center;
   min-height: 50px;
 }
@@ -660,6 +662,9 @@ footer .closing p {
 }
 
 @media (max-width: 870px) {
+  .nav-flex nav {
+    display: none;
+  }
   .bottom-slant,
   .top-slant {
     border-width: 40px 97vw 0 0;
