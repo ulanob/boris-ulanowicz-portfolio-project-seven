@@ -71,3 +71,32 @@ img {
   // padding-top: 50px;
   border-color: $black transparent transparent transparent;
 }
+
+// Animations
+
+@keyframes fade-bottom{
+  0%, 100% {
+    border-bottom: 1px solid $blue;
+  }
+  50% {
+    border-bottom: 1px solid $black;
+  }
+}
+
+@keyframes fade-top{
+  0%, 100% {
+    border-top: 1px solid $blue;
+  }
+  50% {
+    border-top: 1px solid $black;
+  }
+}
+
+@keyframes fade-round{
+  0%, 100% {
+    border: 2px solid $blue;
+  }
+  50% {
+    border: 2px solid $black;
+  }
+}

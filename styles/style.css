@@ -306,6 +306,60 @@ img {
   border-color: #111111 transparent transparent transparent;
 }
 
+@-webkit-keyframes fade-bottom {
+  0%, 100% {
+    border-bottom: 1px solid #3078A4;
+  }
+  50% {
+    border-bottom: 1px solid #111111;
+  }
+}
+
+@keyframes fade-bottom {
+  0%, 100% {
+    border-bottom: 1px solid #3078A4;
+  }
+  50% {
+    border-bottom: 1px solid #111111;
+  }
+}
+
+@-webkit-keyframes fade-top {
+  0%, 100% {
+    border-top: 1px solid #3078A4;
+  }
+  50% {
+    border-top: 1px solid #111111;
+  }
+}
+
+@keyframes fade-top {
+  0%, 100% {
+    border-top: 1px solid #3078A4;
+  }
+  50% {
+    border-top: 1px solid #111111;
+  }
+}
+
+@-webkit-keyframes fade-round {
+  0%, 100% {
+    border: 2px solid #3078A4;
+  }
+  50% {
+    border: 2px solid #111111;
+  }
+}
+
+@keyframes fade-round {
+  0%, 100% {
+    border: 2px solid #3078A4;
+  }
+  50% {
+    border: 2px solid #111111;
+  }
+}
+
 header {
   background-image: url(../assets/code-background.jpg);
   background-repeat: no-repeat;
@@ -319,6 +373,8 @@ header {
 .nav-bar {
   background-color: #111111;
   border-bottom: 1px solid #3078A4;
+  -webkit-animation: fade-bottom 5s ease infinite;
+          animation: fade-bottom 5s ease infinite;
   margin-bottom: 100px;
 }
 
@@ -372,9 +428,15 @@ header {
   margin: 0 auto;
 }
 
+.hover-header-links {
+  border-bottom: 3px solid #111111;
+}
+
 .hover-header-links:hover,
 .hover-header-links:focus {
   border-bottom: 3px solid #3078A4;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .about .about-boris {
@@ -391,6 +453,8 @@ header {
 .about img {
   border-radius: 50% 50%;
   border: 2px solid #3078A4;
+  -webkit-animation: fade-round 5s ease infinite;
+          animation: fade-round 5s ease infinite;
 }
 
 .about p {
@@ -424,6 +488,8 @@ header {
   padding: 20px 0 10px 0;
   border-radius: 10px;
   margin: 0 auto;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .icon i {
@@ -640,6 +706,8 @@ footer .socials i:focus {
 footer .closing {
   background-color: #111111;
   border-top: 1px solid #3078A4;
+  -webkit-animation: fade-top 5s ease infinite;
+          animation: fade-top 5s ease infinite;
   text-align: center;
   min-height: 50px;
 }
