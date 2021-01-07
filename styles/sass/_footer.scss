@@ -67,6 +67,7 @@ footer {
   .closing{
   background-color: $black;
   border-top: 1px solid $blue;
+  animation: fade-top 5s ease infinite;
   text-align: center;
   min-height: 50px;
   p{
