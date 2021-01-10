@@ -19,9 +19,38 @@
     }
   }
 
+  .about .about-boris {
+    display: block;
+    .image-container, img, p{
+      margin: 0px auto 50px;
+    }
+  }
+
   .skills {
     background-position: center;
   }
+
+  .projects {
+    min-height: 600px;
+    h2, h3, p {
+      text-align: center;
+    }
+  }
+
+  .projects .project-content{
+    display: block;
+    .project-image-container {
+      margin: 0 auto 20px;
+      // max-height: 200px;
+      // overflow: hidden;
+    }
+    p:last-child {
+      text-align: left;
+      margin-top: 20px;
+    }
+  }
+
+  
 
   footer {
     input {
@@ -30,7 +59,6 @@
     }
   }
 
-  // hamburger menu
   .bottom-slant,
   .top-slant{
     border-width: 40px 97vw 0 0;

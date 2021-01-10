@@ -1,68 +1,103 @@
 .projects {
+  min-height: 500px;
   h2 {
     color: $white;
+  }
+  h3 {
+    font-size: 2.3rem;
+    border-bottom: 1px solid #3078A4;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+  }
+  p {
+    margin-bottom: 5px;
   }
   img{
     max-width: none;
     border-radius: 10px;
   }
-  .hover-project-gif{
-    display: none;
-  }
+  // .hover-project-gif{
+  //   display: none;
+  // }
 
 
   .project-container {
-    width: 60%;
+    // width: 60%;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 0 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .project-image-container {
+    width: calc(40% - 20px);
+    min-width: 200px;
+    margin-right: 20px;
   }
 
   .project-content{
+    min-height: 300px;
     height: 100%;
+    display: flex;
   }
 
-  .project-column-one,
-  .project-column-two,
-  .project-column-three {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px 0;
-  }
-
-  .project-column-one,
-  .project-column-three {
-    grid-template-rows: 3fr 2fr;
-    img {
-      // height: 100%;
-      object-fit: fill;
+  .chevron {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 4rem;
+    .fa-chevron-left {
+      margin-right: 50px;
+    }
+    .fa-chevron-right {
+      margin-left: 50px;
     }
   }
 
-  .project-column-two {
-    grid-template-rows: 2fr 3fr;
+  a:hover {
+    color: $blue;
+    transform: all(0.5s ease)
   }
 
-  .project-one,
-  .project-two,
-  .project-three {
-    grid-row: 1;
-  }
+  // .project-column-one,
+  // .project-column-two,
+  // .project-column-three {
+  //   display: grid;
+  //   grid-template-columns: 1fr;
+  //   grid-gap: 20px 0;
+  // }
 
-  .project-four,
-  .project-five,
-  .project-six {
-    grid-row: 2;
-  }
+  // .project-column-one,
+  // .project-column-three {
+  //   grid-template-rows: 3fr 2fr;
+  //   img {
+  //     // height: 100%;
+  //     object-fit: fill;
+  //   }
+  // }
 
-  a:hover,
-  a:focus {
-    .hover-project-jpg{
-      display: none;
-    }
-    .hover-project-gif{
-      display: block;
-    }
-  }
+  // .project-column-two {
+  //   grid-template-rows: 2fr 3fr;
+  // }
+
+  // .project-one,
+  // .project-two,
+  // .project-three {
+  //   grid-row: 1;
+  // }
+
+  // .project-four,
+  // .project-five,
+  // .project-six {
+  //   grid-row: 2;
+  // }
+
+  // a:hover,
+  // a:focus {
+  //   .hover-project-jpg{
+  //     display: none;
+  //   }
+  //   .hover-project-gif{
+  //     display: block;
+  //   }
+  // }
 }

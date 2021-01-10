@@ -7,7 +7,7 @@
     display: flex;
   }
   .image-container {
-    width: calc(100% / 5);
+    min-width: calc(100% / 5);
     margin-right: 50px;
   }
   img {
