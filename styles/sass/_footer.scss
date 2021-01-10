@@ -73,6 +73,10 @@ footer {
   p{
     padding: 10px 0;
   }
+  a:hover {
+    color: $blue;
+    transform: all(0.5s ease)
+  }
   }
 }
 
