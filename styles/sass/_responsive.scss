@@ -58,6 +58,15 @@
       width: 96%;
     }
   }
+  body .calendly-prompt {
+    margin: 0 0 0 auto;
+    width: 25%;
+    position: static;
+    p {
+      text-align: right;
+      padding-bottom: 10px;
+    }
+  }
 
   .bottom-slant,
   .top-slant{
