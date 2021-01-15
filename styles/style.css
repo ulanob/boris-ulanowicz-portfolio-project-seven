@@ -245,6 +245,36 @@ body {
   background-color: #111111;
 }
 
+body .calendly-prompt {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 0 10px 10px 0;
+}
+
+body .calendly-prompt a {
+  display: block;
+  padding-right: 10px;
+  font-size: 3rem;
+  text-align: right;
+}
+
+body .calendly-prompt p {
+  font-size: 1.8rem;
+  padding-bottom: 10px;
+  opacity: 0;
+  -webkit-transition: opacity ease 1s;
+  transition: opacity ease 1s;
+}
+
+body .calendly-prompt:hover p {
+  opacity: 1;
+}
+
+body i:hover {
+  color: #3078A4;
+}
+
 * {
   font-family: Raleway, sans-serif;
   color: white;
@@ -766,6 +796,15 @@ footer .closing a:hover {
   footer input {
     display: block;
     width: 96%;
+  }
+  body .calendly-prompt {
+    margin: 0 0 0 auto;
+    width: 25%;
+    position: static;
+  }
+  body .calendly-prompt p {
+    text-align: right;
+    padding-bottom: 10px;
   }
   .bottom-slant,
   .top-slant {

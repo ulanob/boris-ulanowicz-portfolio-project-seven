@@ -1,6 +1,6 @@
 const portfolioApp = {};
 
-portfolioApp.projectIndex = 5;
+portfolioApp.projectIndex = 6;
 
 portfolioApp.init = function() {
   portfolioApp.append(portfolioApp.projectIndex);
@@ -68,7 +68,17 @@ portfolioApp.data = [
     ghLink: '',
     collab: 'Made with <a class="collab" href="https://calvinbarrett.ca/">Calvin Barrett</a> and <a href="http://www.thisgrrlcodes.ca/">Christine Shiels</a>',
     description: 'Sure, you love your soul mate. But have you ever wondered if there was a painting out there that would make you feel the same way and show you who you are? Well, have no fear. Creative Calvin, brilliant Christine and I created this react app that takes your favourite makeup brand, presents colours from the brand\'s products, and renders the painting that you\'ve been waiting for for all this time! We hope that you enjoy the SVG, background splashes, and ultimately discover hue you really are <3'
-  }
+  },
+  {
+    title: 'Gilmore Girls Reference API',
+    tools: 'MERN - MongoDB, Express.js, React, node.js, SASS',
+    image: './assets/project-gg-screenshot2.jpg',
+    imageAlt: 'Screenshot of the Gilmore Girls API frontend, which uses the API of the same name we created',
+    link: 'https://gilmoregirlsapi.netlify.app/',
+    ghLink: '',
+    collab: 'Made with <a href="https://codedkhan.com/">Asif Khan</a>, <a href="https://caitlinklotz.com/">Caitlin Klotz</a> and <a href="https://gregforster.ca/">Greg Forster</a>',
+    description: 'An API for a legendary show. We all know the fast dialogue and the billions of pop culture references, but let\'s be honest, how many did we actually catch? The GG Reference API seeks to provide a database for all the references in the series and a brief explanation of the context and meaning. References are sorted via season, episode, and timestamp. Coming out of a front-end bootcamp, this was a dream project! We wanted to create our own API, so we took a MERN stack course online, and put this together in four days! We have since added CRUD functionality beyond get requests and made a cute react page for it as well. We hope you enjoy! Check out the repos here: <a href="https://github.com/trojanCohorse/project-gg-backend">Backend</a> <a href="https://github.com/trojanCohorse/project-gg">Front-end</a>'
+  },
 ]
 
 portfolioApp.append = (i) => {
@@ -94,14 +104,14 @@ portfolioApp.eventListeners = () => {
   $('.chevron-left').on('click', () => {
     portfolioApp.projectIndex = portfolioApp.projectIndex - 1;
     if (portfolioApp.projectIndex < 0) {
-      portfolioApp.projectIndex = 5;
+      portfolioApp.projectIndex = portfolioApp.data.length - 1;
     }
     portfolioApp.append(portfolioApp.projectIndex);
   })
 
   $('.chevron-right').on('click', () => {
     portfolioApp.projectIndex = portfolioApp.projectIndex + 1;
-    if (portfolioApp.projectIndex > 5) {
+    if (portfolioApp.projectIndex > portfolioApp.data.length - 1) {
       portfolioApp.projectIndex = 0;
     }
     portfolioApp.append(portfolioApp.projectIndex);
